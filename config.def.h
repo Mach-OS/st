@@ -238,11 +238,26 @@ ResourcePref resources[] = {
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
+	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 1} },
+	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 1} },
 	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
+
+	/* { XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 }, */
+	/* { XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} }, */
+	/* { ShiftMask,            Button4, kscrollup,      {.i = 1} }, */
+	/*  	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} }, */
+	/* { ShiftMask,            Button5, kscrolldown,    {.i = 1} }, */
+
+	/* { ShiftMask,            Button4, kscrollup,      {.i = 1} }, */
+	/* { ShiftMask,            Button5, kscrolldown,    {.i = 1} }, */
+	/*  	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 }, */
+	/*  	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} }, */
+	/*  	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} }, */
+
 };
 
 /* Internal keyboard shortcuts. */
@@ -263,6 +278,10 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           clippaste,      {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
+	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
+	{ ControlMask,          XK_u,           kscrollup,      {.i = -1} },
+	{ ControlMask,          XK_d,           kscrolldown,    {.i = -1} },
 };
 
 /*
