@@ -93,6 +93,9 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.95;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
@@ -130,8 +133,8 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 256;
-unsigned int defaultbg = 257;
-static unsigned int defaultcs = 258;
+static unsigned int defaultcs = 257;
+unsigned int defaultbg = 258;
 static unsigned int defaultrcs = 259;
 
 /*
@@ -192,8 +195,8 @@ ResourcePref resources[] = {
 		{ "color14",         STRING,  &colorname[14] },
 		{ "color15",         STRING,  &colorname[15] },
 		{ "foreground",      STRING,  &colorname[256] },
-		{ "background",      STRING,  &colorname[257] },
-		{ "cursorColor",     STRING,  &colorname[258] },
+		{ "cursorColor",     STRING,  &colorname[257] },
+		{ "background",      STRING,  &colorname[258] },
 		{ "revCursorColor",  STRING,  &colorname[259] },
 		{ "termname",     STRING,  &termname },
 		{ "shell",        STRING,  &shell },
