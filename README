@@ -42,8 +42,9 @@ add boxdraw and ligatures together
 appsync
 font2 (doesn't work perfect, trying to find fonts that work with braille and emoji)
 clipboard
+scrollback
+bold is not bright
 
 ## TODO
 keybindings
-bold is not bright
 plumbing
