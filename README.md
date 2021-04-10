@@ -1,7 +1,6 @@
-## st
-
 ![st](st.png)
 
+st is a simple terminal emulator for X which sucks less.
 
 ## Install
 
@@ -11,7 +10,17 @@ cd st
 sudo make clean install
 ```
 
-st is a simple terminal emulator for X which sucks less.
+## Xresources
+
+This terminal uses `~/.Xresources` for colors and other variables.
+
+There is an example included with this repo:
+
+**Note** this will overwrite your current Xresources if present.
+
+```
+mv Xresources ~/.Xresources
+```
 
 ## Patches in order
 
