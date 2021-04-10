@@ -6,6 +6,10 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "monospace:pixelsize=25:antialias=true:autohint=true";
+static char *font2[] = { 
+    /* "JoyPixels:pixelsize=24:antialias=true:autohint=true", */
+    "dejavu:pixelsize=24:antialias=true:autohint=true"
+};
 static int borderpx = 2;
 
 /*
@@ -83,7 +87,7 @@ const int boxdraw = 1;
 const int boxdraw_bold = 0;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
-const int boxdraw_braille = 1;
+const int boxdraw_braille = 0;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
