@@ -34,7 +34,9 @@ mv Xresources ~/.Xresources
 - clipboard
 - scrollback
 - bold is not bright
+- external pipe (url opening using [this](https://github.com/LukeSmithxyz/st/blob/master/st-urlhandler) script)
 
 ## TODO
-keybindings
-plumbing
+
+- more keybindings
+
