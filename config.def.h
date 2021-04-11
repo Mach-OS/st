@@ -7,8 +7,8 @@
  */
 static char *font = "monospace:pixelsize=25:antialias=true:autohint=true";
 static char *font2[] = { 
-    /* "JoyPixels:pixelsize=24:antialias=true:autohint=true", */
-    "dejavu:pixelsize=24:antialias=true:autohint=true"
+    "Braille:pixelsize=24:antialias=true:autohint=true"
+    "JoyPixels:pixelsize=24:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
